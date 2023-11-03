@@ -643,7 +643,7 @@
 	<key>readme</key>
 	<string>## Usage 
 
-Send a tapback to the last received message via the `tapback` keyword.
+Send a tapback to the current message via the `tapback` keyword.
 
 ![List of possible tapback reactions](images/about/tapback.png)
 
@@ -852,8 +852,6 @@ Tapback Message…</string>
 			<string>tapback_current</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>2023.1</string>
 	<key>webaddress</key>
