@@ -250,7 +250,7 @@
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"imagefile":"6ce5914455c30777c1c6fc455bba5d21bc3d57cd.png","title":"Love","arg":"1","subtitle":"Reaction 1"},{"imagefile":"55ee964892e38b02a0d1d1cb7d33b0fa6f52af82.png","title":"Like","arg":"2","subtitle":"Reaction 2"},{"imagefile":"16a834c5d032d414dfefb0e0d3d0108e1eb69834.png","title":"Dislike","arg":"3","subtitle":"Reaction 3"},{"imagefile":"029a3d38be2e23080d54ed864bf3fda4ab645290.png","title":"Laugh","arg":"4","subtitle":"Reaction 4"},{"imagefile":"acd66da2870f1ce334a2bf3dc1f7f62d169cb1a1.png","title":"Emphasise","arg":"5","subtitle":"Reaction 5"},{"imagefile":"536997e6985e2b50406af8abdcf612e85ead0be0.png","title":"Question","arg":"6","subtitle":"Reaction 6"}]</string>
+				<string>[{"imagefile":"6ce5914455c30777c1c6fc455bba5d21bc3d57cd.png","title":"Love","arg":"1","subtitle":""},{"imagefile":"55ee964892e38b02a0d1d1cb7d33b0fa6f52af82.png","title":"Like","arg":"2","subtitle":""},{"imagefile":"16a834c5d032d414dfefb0e0d3d0108e1eb69834.png","title":"Dislike","arg":"3","subtitle":""},{"imagefile":"029a3d38be2e23080d54ed864bf3fda4ab645290.png","title":"Laugh","arg":"4","subtitle":""},{"imagefile":"acd66da2870f1ce334a2bf3dc1f7f62d169cb1a1.png","title":"Emphasise","arg":"5","subtitle":""},{"imagefile":"536997e6985e2b50406af8abdcf612e85ead0be0.png","title":"Question","arg":"6","subtitle":""}]</string>
 				<key>keyword</key>
 				<string>{var:tapback_keyword}</string>
 				<key>matchmode</key>
