@@ -6,7 +6,7 @@ Add a tapback reaction to the current message
 
 ## Usage 
 
-Send a tapback to the last received message via the `tapback` keyword.
+Send a tapback to the current message via the `tapback` keyword.
 
 ![List of possible tapback reactions](Workflow/images/about/tapback.png)
 
