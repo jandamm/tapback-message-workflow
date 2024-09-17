@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>EBBBF2FD-5F56-47E4-A991-31EE2A0AF5C5</string>
+				<string>5CAB5022-2BEA-41B2-95A0-950873BB3FB2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -49,7 +49,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>EBBBF2FD-5F56-47E4-A991-31EE2A0AF5C5</string>
+				<string>5CAB5022-2BEA-41B2-95A0-950873BB3FB2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -76,6 +76,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FB709958-B680-4247-A1A7-A3FBEC709169</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5CAB5022-2BEA-41B2-95A0-950873BB3FB2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EBBBF2FD-5F56-47E4-A991-31EE2A0AF5C5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -402,6 +415,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>seconds</key>
+				<string>0.{var:tapback_delay}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>5CAB5022-2BEA-41B2-95A0-950873BB3FB2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -706,6 +732,15 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 			<key>ypos</key>
 			<real>360</real>
 		</dict>
+		<key>5CAB5022-2BEA-41B2-95A0-950873BB3FB2</key>
+		<dict>
+			<key>note</key>
+			<string>Give reactions panel time to show</string>
+			<key>xpos</key>
+			<real>885</real>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
 		<key>5D8BB7FD-343C-425B-AD20-83CD314A2644</key>
 		<dict>
 			<key>note</key>
@@ -736,7 +771,7 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 		<key>74B5B784-AFA1-48C2-B896-5D24DB0437FD</key>
 		<dict>
 			<key>xpos</key>
-			<real>970</real>
+			<real>1115</real>
 			<key>ypos</key>
 			<real>220</real>
 		</dict>
@@ -770,7 +805,7 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 			<key>note</key>
 			<string>Load reaction number</string>
 			<key>xpos</key>
-			<real>870</real>
+			<real>1015</real>
 			<key>ypos</key>
 			<real>250</real>
 		</dict>
@@ -810,6 +845,31 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>defaultvalue</key>
+				<integer>2</integer>
+				<key>markercount</key>
+				<integer>9</integer>
+				<key>maxvalue</key>
+				<integer>9</integer>
+				<key>minvalue</key>
+				<integer>1</integer>
+				<key>onlystoponmarkers</key>
+				<true/>
+				<key>showmarkers</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Tenths of a second to wait before selecting a reaction. Increase if your Mac needs more time to play the animation.</string>
+			<key>label</key>
+			<string>Tapback Delay</string>
+			<key>type</key>
+			<string>slider</string>
+			<key>variable</key>
+			<string>tapback_delay</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>default</key>
 				<string>Edit
 Tapback Last Message…</string>
@@ -843,7 +903,7 @@ Tapback Message…</string>
 				<integer>3</integer>
 			</dict>
 			<key>description</key>
-			<string>Change if your system is not in English and the item under "Edit" has a different name.</string>
+			<string>Change if your system is not in English and the items under "Edit" have different names.</string>
 			<key>label</key>
 			<string>Tapback Current Menu</string>
 			<key>type</key>
