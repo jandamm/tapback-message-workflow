@@ -6,6 +6,19 @@
 	<string>com.alfredapp.vitor.tapbackmessage</string>
 	<key>connections</key>
 	<dict>
+		<key>03DA4ADC-66B8-4480-8B27-C5475A85EBAE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>65D81721-8666-4964-9111-19E507F75069</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>07F46614-4665-4259-859B-542A95D1EA76</key>
 		<array>
 			<dict>
@@ -37,6 +50,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>5F2442AB-01B9-4839-931B-A3080CE22F99</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2FE65821-D3D3-47B3-B3EC-52A2281AACCD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9215ABBC-1563-4CEA-9DF8-6A8FAEA32E07</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -136,6 +162,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>74B5B784-AFA1-48C2-B896-5D24DB0437FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9B578D37-604F-40A5-B293-CC97BEDE8447</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>87F81062-CC3A-4011-86DC-DF931B4C05E2</key>
 		<array>
 			<dict>
@@ -155,6 +194,34 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9215ABBC-1563-4CEA-9DF8-6A8FAEA32E07</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>87F81062-CC3A-4011-86DC-DF931B4C05E2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9B578D37-604F-40A5-B293-CC97BEDE8447</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>03DA4ADC-66B8-4480-8B27-C5475A85EBAE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>5F2E6105-3776-4737-9611-5054CD41892F</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -202,7 +269,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>87F81062-CC3A-4011-86DC-DF931B4C05E2</string>
+				<string>2FE65821-D3D3-47B3-B3EC-52A2281AACCD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -237,8 +304,6 @@
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -252,6 +317,121 @@
 			<string>249D7D52-08A6-477A-9EF1-32A800E70E01</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>out_format</key>
+					<string>bundle_id</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/app.current</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>2FE65821-D3D3-47B3-B3EC-52A2281AACCD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>prev_app</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>9215ABBC-1563-4CEA-9DF8-6A8FAEA32E07</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>menubar_items</key>
+					<string>{var:tapback_last}</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/app.current.click.menubar.item</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>30D9E626-25E8-4C54-92BC-DEB9357EE26A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string></string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>0</integer>
+				<key>overridewithargument</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>74B5B784-AFA1-48C2-B896-5D24DB0437FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⇥</string>
+				<key>keycode</key>
+				<integer>48</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>65D81721-8666-4964-9111-19E507F75069</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Applications/Messages.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>87F81062-CC3A-4011-86DC-DF931B4C05E2</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -287,45 +467,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string></string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>0</integer>
-				<key>overridewithargument</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>74B5B784-AFA1-48C2-B896-5D24DB0437FD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>menubar_items</key>
-					<string>{var:tapback_last}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/macOS/app.current.click.menubar.item</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>30D9E626-25E8-4C54-92BC-DEB9357EE26A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -335,11 +476,9 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>17</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>T</string>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -361,34 +500,45 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/System/Applications/Messages.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
+				<key>seconds</key>
+				<string>1</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
+			<string>alfred.workflow.utility.delay</string>
 			<key>uid</key>
-			<string>87F81062-CC3A-4011-86DC-DF931B4C05E2</string>
+			<string>03DA4ADC-66B8-4480-8B27-C5475A85EBAE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{var:reaction}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:prev_app}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string>com.apple.MobileSMS</string>
+						<key>outputlabel</key>
+						<string>Switch to previous app</string>
+						<key>uid</key>
+						<string>5F2E6105-3776-4737-9611-5054CD41892F</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>EBBBF2FD-5F56-47E4-A991-31EE2A0AF5C5</string>
+			<string>9B578D37-604F-40A5-B293-CC97BEDE8447</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -409,6 +559,23 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>FB709958-B680-4247-A1A7-A3FBEC709169</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:reaction}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>EBBBF2FD-5F56-47E4-A991-31EE2A0AF5C5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -442,8 +609,6 @@
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -494,11 +659,9 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>-1</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>double tap</string>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -534,8 +697,6 @@
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -571,8 +732,6 @@
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -608,8 +767,6 @@
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -645,8 +802,6 @@
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -678,6 +833,13 @@ Send a tapback to the current message via the `tapback` keyword.
 Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) for faster triggering.</string>
 	<key>uidata</key>
 	<dict>
+		<key>03DA4ADC-66B8-4480-8B27-C5475A85EBAE</key>
+		<dict>
+			<key>xpos</key>
+			<real>1360</real>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
 		<key>07F46614-4665-4259-859B-542A95D1EA76</key>
 		<dict>
 			<key>note</key>
@@ -704,6 +866,13 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 			<real>70</real>
 			<key>ypos</key>
 			<real>55</real>
+		</dict>
+		<key>2FE65821-D3D3-47B3-B3EC-52A2281AACCD</key>
+		<dict>
+			<key>xpos</key>
+			<real>425</real>
+			<key>ypos</key>
+			<real>70</real>
 		</dict>
 		<key>30D9E626-25E8-4C54-92BC-DEB9357EE26A</key>
 		<dict>
@@ -768,6 +937,13 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 			<key>ypos</key>
 			<real>500</real>
 		</dict>
+		<key>65D81721-8666-4964-9111-19E507F75069</key>
+		<dict>
+			<key>xpos</key>
+			<real>1445</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
 		<key>74B5B784-AFA1-48C2-B896-5D24DB0437FD</key>
 		<dict>
 			<key>xpos</key>
@@ -781,6 +957,20 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 			<real>530</real>
 			<key>ypos</key>
 			<real>220</real>
+		</dict>
+		<key>9215ABBC-1563-4CEA-9DF8-6A8FAEA32E07</key>
+		<dict>
+			<key>xpos</key>
+			<real>580</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>9B578D37-604F-40A5-B293-CC97BEDE8447</key>
+		<dict>
+			<key>xpos</key>
+			<real>1275</real>
+			<key>ypos</key>
+			<real>250</real>
 		</dict>
 		<key>B27B85A9-FCC6-4DC2-B820-882BE48B3FD9</key>
 		<dict>
@@ -912,6 +1102,8 @@ Tapback Message…</string>
 			<string>tapback_current</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>2024.2</string>
 	<key>webaddress</key>
